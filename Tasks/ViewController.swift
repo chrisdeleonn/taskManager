@@ -18,6 +18,14 @@ class ViewController: UIViewController {
         
         // Get all saved tasks
     }
+    
+    @IBAction func didTapAdd() {
+        
+        let vc = storyboard?.instantiateViewController(identifier: "entry") as! EntryViewController
+        vc.title = "New Task"
+        navigationController?.pushViewController(vc, animated: true)
+        
+    }
 
 
 }

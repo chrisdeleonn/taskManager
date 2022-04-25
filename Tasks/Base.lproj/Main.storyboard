@@ -40,7 +40,9 @@
                             <constraint firstItem="brz-uh-jBP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bvd-Tz-Y3y"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="8fz-cD-Daq"/>
+                    <navigationItem key="navigationItem" id="8fz-cD-Daq">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="T1d-eR-ihK"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="brz-uh-jBP" id="6Kq-I1-IYq"/>
                     </connections>
@@ -49,10 +51,25 @@
             </objects>
             <point key="canvasLocation" x="939.13043478260875" y="65.625"/>
         </scene>
-        <!--View Controller-->
+        <!--Task View Controller-->
+        <scene sceneID="EKO-es-bdP">
+            <objects>
+                <viewController storyboardIdentifier="task" id="o6C-hS-OQA" customClass="TaskViewController" customModule="Tasks" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="URK-im-g8c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="R90-HG-FZt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Roh-63-hbv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="939" y="781"/>
+        </scene>
+        <!--Entry View Controller-->
         <scene sceneID="hMU-Qo-tWW">
             <objects>
-                <viewController id="oIk-JG-N2H" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="entry" id="oIk-JG-N2H" customClass="EntryViewController" customModule="Tasks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gpf-lX-AvA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
