@@ -62,9 +62,26 @@
                     <view key="view" contentMode="scaleToFill" id="URK-im-g8c">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYg-pR-hTI">
+                                <rect key="frame" x="12" y="56" width="390" height="794"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="R90-HG-FZt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="R90-HG-FZt" firstAttribute="trailing" secondItem="BYg-pR-hTI" secondAttribute="trailing" constant="12" id="Otg-c1-Bfo"/>
+                            <constraint firstItem="R90-HG-FZt" firstAttribute="bottom" secondItem="BYg-pR-hTI" secondAttribute="bottom" constant="12" id="ZJT-nW-OPI"/>
+                            <constraint firstItem="BYg-pR-hTI" firstAttribute="leading" secondItem="R90-HG-FZt" secondAttribute="leading" constant="12" id="v8V-gq-Ymi"/>
+                            <constraint firstItem="BYg-pR-hTI" firstAttribute="top" secondItem="R90-HG-FZt" secondAttribute="top" constant="12" id="zMn-jA-lTc"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="BYg-pR-hTI" id="84z-2D-gLs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Roh-63-hbv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
